@@ -9,9 +9,13 @@ class Blog(models.Model):
     text = models.TextField(max_length=500)
 
 
+    def __str__(self):
+        return self.title
 
+    def summary(self):
+        length_of_text = len(self.text)
+        info = (self.text[:100] + "...") if (length_of_text > 100) else (self.text[:100])
+        return info
 
-# Add blog app to settings
-# Create Migration
-# Migrate
-# Add to the admin
+    def pub_date_pretty(self):
+        return self.pub_date.strftime('%b %e, %Y')
