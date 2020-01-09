@@ -33,7 +33,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
+    
   </head>
   <body>
     <header>
@@ -48,10 +48,16 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{% static 'resume2.pdf' %}">Resume</a>
+                <a class="nav-link" href="{% static 'resume2.pdf' %}" target="_blank">Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'allblogs'%}">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/eric-lin-4738b9174/" target="_blank">LinkedIn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/ericlin11"target="_blank">GitHub</a>
             </li>
             </ul>
         </div>
@@ -62,12 +68,14 @@
 
   <section class="jumbotron text-center">
     <div class="ml-auto">
-      <h1 class="jumbotron-heading">Wassup my doods</h1>
-      <p class="lead text-muted">Suh dooooooooooooooods</p>
+      <h1 class="jumbotron-heading">Welcome to my website!</h1>
+      <p class="lead text-muted">Check out the other website I made for my web development class </br> 
+      <a href= "/CST2309Project/home.html" target="_blank"> Here </a>
+      </p>
       <p>
         <a href="mailto:eric.lin@mail.citytech.cuny.edu" class="btn btn-primary my-2">Contact me</a>
       </p>
-      <img src= "{% static 'eric.jpg' %}" height = 300 width = 650 />
+      
     </div>
   </section>
 
